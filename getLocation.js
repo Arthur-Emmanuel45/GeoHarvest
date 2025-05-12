@@ -1,6 +1,6 @@
 const errorMessage = document.getElementById("error_message");
 const getLat = document.getElementById("get_lat");
-if (navigator.geolocation) {
+if (!navigator.geolocation) {
     errorMessage.innerHTML = "no gelocation avaliable"
 }
 
