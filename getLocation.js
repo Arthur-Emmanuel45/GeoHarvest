@@ -63,7 +63,7 @@ const getUserLocation = () => {
         maximumAge: 0
     }
     
-    navigator.geolocation.watchPosition(success, error, options);
+    navigator.geolocation.getCurrentPosition(success, error, options);
 }
 
 // Button click triggers geolocation
